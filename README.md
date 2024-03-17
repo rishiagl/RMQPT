@@ -1,0 +1,4 @@
+- RabbitMQ
+- Python
+- Pika
+- AWS Cloud
