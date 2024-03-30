@@ -5,8 +5,6 @@ credentials = pika.PlainCredentials('rishiagl', '1234')
 connection = pika.BlockingConnection(pika.ConnectionParameters('52.66.250.239', 5672, 'vh1', credentials))
 channel = connection.channel()
 
-channel.exchange_declare(exchange='NAME', exchange_type='topic')
-
 if len(sys.argv) < 2:
     print("Please Exchange Name")
     sys.exit(0)
